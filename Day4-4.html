@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .x{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        position:absolute;
+    }
+    @media screen and (max-width:1000px) {
+        .x{
+            display: grid;
+            grid-template-columns: auto  auto;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .x{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+    .a{
+        
+        background-color: red;
+        height:50px;
+        width: 50px;
+        position:static;
+    }
+    .b{
+        background-color: rgb(65, 206, 103);
+        height:50px;
+        width: 50px;
+        position:static;
+    }
+    .c{
+        background-color: rgb(233, 226, 35);
+        height:50px;
+        width: 50px;
+        position:static;
+    }
+    .d{
+        background-color: rgb(52, 9, 179);
+        height:50px;
+        width: 50px;
+        position:static;
+        
+    }
+</style>
+<body>
+    <div class="x">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+    
+</body>
+</html>
