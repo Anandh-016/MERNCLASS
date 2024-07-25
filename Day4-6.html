@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        padding-top: 50px;
+        background-color:red;
+        height:4cm;
+        margin-left:-10px;
+        margin-right:-10px;
+    }
+    .b{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        
+        padding-top: 50px;
+
+    }
+    .d{
+        background-color: blue;
+        height:6cm;
+        width:6cm;
+        gap: 20px;
+    }
+    .c{ 
+        background-color: blue;
+        height:6cm;
+        width:6cm;
+        gap:20px;
+
+    }
+    .e{
+        background-color: blue;
+        height:6cm;
+        width:6cm;
+        gap:20px;
+    }
+    .x{
+        background-color: yellow;
+        height:5cm;
+        width: 5cm;
+    }
+    
+    .y{
+        background-color: yellow;
+        height:5cm;
+        width: 5cm;
+    
+    }
+    
+    .z{
+        background-color: yellow;
+        height:5cm;
+        width: 5cm;
+    
+        
+    }
+    .v{
+        background-color: yellow;
+        height:5cm;
+        width: 5cm;
+    }
+    .s{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+    @media screen and (max-width:800px) 
+    {
+        .b{
+            display: grid;
+            grid-template-columns: auto;
+            gap:20px;
+        }
+        .s{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:20px;
+
+        }
+        
+    }
+    @media screen and (max-width:600px)
+    {
+        .s{
+            display:grid;
+            grid-template-columns: auto;
+            gap:20px;
+        }
+    }
+    
+    </style>
+    <body style="background-color: grey;">
+    <div class="a"></div>
+    <div class="b">
+
+        <div class="d"></div>
+        <div class="c"></div>
+        <div class="e"></div>
+        
+    </div>
+    <div class="s">
+        <div class="x"></div>
+        <div class="y"></div>
+        <div class="z"></div>
+        <div class="v"></div>
+    </div>
+</body>
+</html>
